@@ -1,0 +1,42 @@
+# === Node & Express (Backend) ===
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/build/
+backend/logs/
+backend/debug.log
+backend/npm-debug.log
+
+# === React (Frontend) ===
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+
+# === Common ===
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# === OS & Editor junk ===
+.vscode/
+.idea/
+*.iml
+
+# === Git ===
+.git/
+# === Testing ===
+coverage/
+*.lcov
+
+# === Misc ===
+*.tgz
