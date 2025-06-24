@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -13,7 +14,7 @@ export const Login = () => {
   return (
     <Card className="w-full max-w-sm bg-black text-white">
       <CardHeader>
-        <CardTitle>Login</CardTitle>
+        <CardTitle className="text-2xl">Login</CardTitle>
         <CardDescription>
           Enter your Email and password to login
         </CardDescription>
@@ -36,10 +37,15 @@ export const Login = () => {
           ></Input>
         </form>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="flex-col gap-4">
         <Button variant="secondary" className="w-full">
           Login
         </Button>
+        <Link to={"/signup"}>
+          <div className="w-full flex items-center justify-center text-white/50 text-sm hover:text-white/60 hover:underline hover:cursor-pointer">
+            Don't have an account? Sign Up!
+          </div>
+        </Link>
       </CardFooter>
     </Card>
   );

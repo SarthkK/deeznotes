@@ -34,7 +34,6 @@ authRouter.post("/signup", async (req, res) => {
       });
       return;
     }
-    // return user with jwt cookie
 
     // hash password
     const hashedPassword = await hashPassword(password);
